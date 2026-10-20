@@ -8,6 +8,7 @@ Open `index.html` in a current web browser. No installation, account, server, or
 
 ## Features
 
+- Guided five-step tour that takes users to month selection, expense entry, budgets, recurring expenses, and insights
 - Monthly summary, budget snapshot with remaining or overspent amount, and ranked spending categories
 - Four most recent transactions on the overview, with a shortcut to the full list
 - Add, edit, delete, search, and filter transactions
@@ -27,7 +28,7 @@ Open `index.html` in a current web browser. No installation, account, server, or
 
 ## Honest portfolio description
 
-After reviewing and understanding the code, the developer can describe this as a browser-based expense tracker with category budgets, a budget snapshot, recent transactions, reusable recurring expense templates, a six-month spending trend, and spending insights. It uses JavaScript, local storage, hash-map aggregation, and merge sort. Do not claim independent authorship of code that was not personally built or understood; customize it, trace the algorithm, and be ready to explain the implementation.
+After reviewing and understanding the code, the developer can describe this as a browser-based expense tracker with category budgets, a budget snapshot, recent transactions, reusable recurring expense templates, a six-month spending trend, spending insights, and a guided tour for first-time users. It uses JavaScript, local storage, hash-map aggregation, and merge sort. Do not claim independent authorship of code that was not personally built or understood; customize it, trace the algorithm, and be ready to explain the implementation.
 
 ## Deploy
 
