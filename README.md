@@ -4,13 +4,15 @@ PocketSort is a small personal expense tracker that helps answer a familiar ques
 
 ## Run it
 
-Open `index.html` in a current web browser. No installation, account, server, or physical device is required. Entries and category budgets are stored in that browser's local storage and are not uploaded. Use **Load sample** to explore the dashboard; sample data replaces entries for the selected month, so export any month you want to keep before loading samples.
+Open `index.html` in a current web browser. No installation, account, server, or physical device is required. Entries, category budgets, and recurring templates are stored in that browser's local storage and are not uploaded. Use **Load sample** to explore the dashboard; sample data replaces entries for the selected month, so export any month you want to keep before loading samples.
 
 ## Features
 
 - Monthly summary and ranked spending categories
 - Add, edit, delete, search, and filter transactions
 - Monthly category budgets with 80% warning and over-budget indicators
+- Save recurring expense templates and explicitly add each one once to a selected month; dates after the 28th are clamped to the last day of shorter months
+- Six-month spending trend based on recorded transactions
 - Export the selected month's transactions to CSV
 - Monthly insights and an in-app explanation of the algorithms
 - Responsive layout for phone and desktop browsers
@@ -19,11 +21,12 @@ Open `index.html` in a current web browser. No installation, account, server, or
 
 - A hash map groups transactions by category and adds amounts in one pass: O(n), where n is the number of transactions.
 - Merge sort orders category totals from largest to smallest: O(k log k), where k is the number of categories.
+- The spending trend groups recorded expenses by month in one pass: O(n).
 - Totals and average are calculated from the selected month's transactions.
 
 ## Honest portfolio description
 
-After reviewing and understanding the code, the developer can describe this as a browser-based expense tracker with category budgets and spending insights. It uses JavaScript, local storage, hash-map aggregation, and merge sort. Do not claim independent authorship of code that was not personally built or understood; customize it, trace the algorithm, and be ready to explain the implementation.
+After reviewing and understanding the code, the developer can describe this as a browser-based expense tracker with category budgets, reusable recurring expense templates, a six-month spending trend, and spending insights. It uses JavaScript, local storage, hash-map aggregation, and merge sort. Do not claim independent authorship of code that was not personally built or understood; customize it, trace the algorithm, and be ready to explain the implementation.
 
 ## Deploy
 
